@@ -1,0 +1,33 @@
+.gameboard {
+  /*height: 100vh;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*width: calc(200px * 8);*/
+  width: 90vw;
+  margin: 20vh auto;
+}
+
+.tile {
+  box-sizing: border-box;
+  border: 1px solid black;
+  /*height: 180px;*/
+  width: calc(100% / 8 - 20px);
+  margin: 10px;
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #444;
+  color: white;
+  transition: all 230ms ease-in-out;
+  cursor: pointer;
+}
+
+.tile:hover {
+  box-shadow: 0 0 5px 5px orange;
+}
+
+.tile:after {
+  content: "";
+  display: block;
+  padding-bottom: calc(100%);
+}
